@@ -18,22 +18,22 @@ $(function() {
 
     function showCountriesList(resp) {
         var $li;
-        var $name = $('<p>').addClass('countryName');
-        var $capital = $('<p>').addClass('countryCapital');
-        var $region = $('<p>').addClass('countryRegion');
-        var $population = $('<p>').addClass('countryPopulation');
-        var $area = $('<p>').addClass('countryArea');
+        var $name;
+        var $capital;
+        var $region;
+        var $population;
+        var $area;
 
         $countriesList.empty();
         console.log(resp);
 
         resp.forEach(function(item) {
             $li = $('<li>').addClass('countryCard');
-            $region.text(item.region).appendTo($li);
-            $name.text(item.name).appendTo($li);
-            $capital.text(item.capital).appendTo($li);
-            $population.text(item.population).appendTo($li);
-            $area.text(item.area + 'm^2').appendTo($li);
+            $region = $('<p>').addClass('countryName').text(item.region).appendTo($li);
+            $name = $('<p>').addClass('countryCapital').text(item.name).appendTo($li);
+            $capital = $('<p>').addClass('countryRegion').text(item.capital).appendTo($li);
+            $population = $('<p>').addClass('countryPopulation').text(item.population).appendTo($li);
+            $area = $('<p>').addClass('countryArea').text(item.area + 'm^2').appendTo($li);
             $li.appendTo($countriesList);
         });
     };
