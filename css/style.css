@@ -9,17 +9,6 @@ body {
   font-size: 18px;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 header {
   background-color: lightblue;
   max-width: 250px;
@@ -28,6 +17,10 @@ header {
   font-size: 24px;
   border-radius: 20px;
   margin: 0 auto 25px;
+}
+
+p {
+  width: 100%;
 }
 
 input,
@@ -55,7 +48,7 @@ button {
   color: orange;
 }
 
-[id=countries] {
+[id=countries] div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
