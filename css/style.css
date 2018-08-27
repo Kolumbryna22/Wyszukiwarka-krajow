@@ -1,73 +1,21 @@
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
-body {
-  margin: 0;
-  padding: 20px;
-  text-align: center;
-  font-size: 18px;
-}
+body { margin: 0; padding: 20px; text-align: center; font-size: 18px; }
 
-header {
-  background-color: lightblue;
-  max-width: 250px;
-  width: 100%;
-  padding: 10px;
-  font-size: 24px;
-  border-radius: 20px;
-  margin: 0 auto 25px;
-}
+header { background-color: lightblue; max-width: 250px; width: 100%; padding: 10px; font-size: 24px; border-radius: 20px; margin: 0 auto 25px; }
 
-p {
-  width: 100%;
-}
+p { width: 100%; }
 
-input,
-button {
-  border-radius: 3px;
-  border: 2px solid lightblue;
-  padding: 5px;
-}
+input, button { border-radius: 3px; border: 2px solid lightblue; padding: 5px; }
 
-button {
-  background-color: lightblue;
-  font-weight: bold;
-  cursor: pointer;
-}
+button { background-color: lightblue; font-weight: bold; cursor: pointer; }
 
-.list {
-  border: 1px solid lightblue;
-  width: 150px;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 30px auto 15px;
-}
+.list { border: 1px solid lightblue; width: 150px; border-radius: 10px; padding: 10px; margin: 30px auto 15px; }
 
-.warning {
-  color: orange;
-}
+.warning { color: orange; }
 
-[id=countries] div {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
+[id=countries] div { display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -ms-flex-pack: center; justify-content: center; }
 
-.country-card {
-  border: 1px solid lightblue;
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
-  width: 200px;
-}
+.country-card { border: 1px solid lightblue; border-radius: 10px; padding: 10px; margin: 10px; width: 200px; }
 
-.country-card .country-region {
-  font-size: 20px;
-  font-weight: bold;
-  border-bottom: 1px solid lightblue;
-  padding: 5px;
-  margin: 0;
-}
-
-/*# sourceMappingURL=style.css.map */
+.country-card .country-region { font-size: 20px; font-weight: bold; border-bottom: 1px solid lightblue; padding: 5px; margin: 0; }

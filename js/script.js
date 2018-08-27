@@ -19,6 +19,8 @@ $(function() {
         var $card;
         var $list = $('<div>');
         var $countriesList = $('#countries');
+        var square = '2';
+        square = square.sup();
 
         $countriesList.empty();
 
@@ -28,7 +30,7 @@ $(function() {
             $('<p>').addClass('country-capital').text('Country: ' + item.name).appendTo($card);
             $('<p>').addClass('country-name').text('Capital: ' + item.capital).appendTo($card);
             $('<p>').addClass('country-population').text('Populatioin: ' + item.population).appendTo($card);
-            $('<p>').addClass('country-area').text('Area: ' + item.area + ' m^2').appendTo($card);
+            $('<p>').addClass('country-area').html('Area: ' + item.area + ' m' + square).appendTo($card);
             $card.appendTo($list);
         });
 
